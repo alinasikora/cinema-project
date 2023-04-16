@@ -57,20 +57,20 @@ body {
 
 .sort {
     padding: $std-indent;
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     height: fit-content;
 }
 
-// .sort .sort__label,
-// .sort .sort__item {
-//    display: none;
-//}
-.sort {
-    .sort__item,
-    .sort__label {
-        display: none;
-    }
+.sort .sort__item,
+.sort .sort__label {
+    display: block;
+}
+
+.sort .sort__label {
+    margin-right: 16px;
 }
 
 .sort.open .sort__label,
@@ -188,24 +188,32 @@ body {
         margin: 0 16px 16px 16px;
     }
 
-    .burger {
-        display: inline-block;
-    }
     .sort {
         padding: 16px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         height: fit-content;
     }
 
     .sort .sort__item,
     .sort .sort__label {
-        display: block;
+        display: none;
     }
 
-    .sort .sort__label {
-        margin-right: 16px;
+    .sidebar {
+        display: none;
+    }
+    .card {
+        width: 100%;
+        margin: 0 16px 16px 16px;
+    }
+    .burger {
+        display: inline-block;
+    }
+    .burger__bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
     }
 }
