@@ -191,4 +191,21 @@ body {
     .burger {
         display: inline-block;
     }
+    .sort {
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .sort .sort__item,
+    .sort .sort__label {
+        display: block;
+    }
+
+    .sort .sort__label {
+        margin-right: 16px;
+    }
 }
